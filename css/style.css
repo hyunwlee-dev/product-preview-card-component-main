@@ -1,0 +1,13 @@
+@import url('./normalize.css');
+@import url('./base.css');
+@import url('./theme.css');
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: 'Fraunces', serif;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--cream);
+}
