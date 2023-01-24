@@ -1,0 +1,23 @@
+@import url('./normalize.scss');
+@import url('./base.scss');
+@import url('./theme.scss');
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: 'Fraunces', serif;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--cream);
+}
+
+.card {
+  border: 3px solid red;
+  width: 600px;
+  height: 450px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row nowrap;
+}
+
