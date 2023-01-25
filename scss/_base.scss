@@ -1,3 +1,6 @@
+@import "utiles";
+$font-stack: 'Montserrat', serif;
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -17,12 +20,15 @@ a {
   text-decoration: none;
 }
 
+html {
+  font-size: $rootUnit;
+  font-family: $font-stack;
+}
+
 body {
-  font-size: 18px;
-  font-family: 'Josefin Sans', sans-serif;
-  display: flex;
-  flex-flow: column nowrap;
+  @include flexboxCenter();
   height: 100vh;
+  color: var(--very-dark-blue);
 }
 
 image {

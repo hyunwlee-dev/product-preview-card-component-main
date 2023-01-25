@@ -1,10 +1,7 @@
 @import 'base';
 @import 'normalize';
 @import 'theme';
-
-html {
-  font-size: 14px;
-}
+@import 'utiles';
 
 body {
   font-family: 'Fraunces', serif;
@@ -14,10 +11,10 @@ body {
 
 .card {
   overflow: hidden;
-  width: 600px;
-  height: 450px;
+  width: rem(600);
+  height: rem(450);
   margin: auto auto;
-  border-radius: 5px;
+  border-radius: 8px;
   display: flex;
   flex-direction: row nowrap;
   &__image {
@@ -29,31 +26,72 @@ body {
   &__content {
     width: 300px;
     height: auto;
+    background-color: var(--white);
+    padding: 32px;
     &__head1 {
-      background-color: red;
+      color: var(--dark-grayish-blue);
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 5px;
+      margin-bottom: 20px;
     }
     &__head2 {
-      background-color: orange;
+      font-family: 'Fraunces', sans-serif;  
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 32px;
+      margin-bottom: 24px;
     }
     &__paragraph {
-      background-color: yellow;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 23px;
+      margin-bottom: 29px;
     }
     &__price {
       &--discount {
-        background-color: green;
+        float: left;
+        font-family: 'Fraunces', sans-serif;  
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        color: var(--dark-cyan);
       }
       &--raw {
-        background-color: blue; 
+        float: left;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 32px;
+        height: 32px;
+        margin-left: 19px;
+        text-decoration: line-through;
+        margin-bottom: 32px;
       }
     }
     &__add__to__cart {
-      background-color: navy;
+      width: 236px;
+      height: 48px;
+      display: flex;
+      background-color: var(--dark-cyan);
+      border-radius: 8px;
+      justify-content: center;
+      align-items: center;
+      gap: 11.6px;
+      cursor: pointer;
       &__icon{
-        background-color: aliceblue;
+        width: 14.39px;
+        height: 16px;
       }
       &__text{
-        background-color: aquamarine;
+        color: var(--white);
       }
     }
+    &__add__to__cart:hover {
+      background-color: #1A4032;
+    }
   }
+}
+
+.float__wrapper {
+  display: flow-root;
 }
