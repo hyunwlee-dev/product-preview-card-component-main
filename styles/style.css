@@ -17,12 +17,18 @@ a {
   text-decoration: none;
 }
 
+html {
+  font-size: 14px;
+  font-family: "Montserrat", serif;
+}
+
 body {
-  font-size: 18px;
-  font-family: "Josefin Sans", sans-serif;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
+  color: var(--very-dark-blue);
 }
 
 image {
@@ -254,10 +260,6 @@ table {
   --white: hsl(0, 0%, 100%);
 }
 
-html {
-  font-size: 14px;
-}
-
 body {
   font-family: "Fraunces", serif;
   font-family: "Montserrat", sans-serif;
@@ -266,10 +268,10 @@ body {
 
 .card {
   overflow: hidden;
-  width: 600px;
-  height: 450px;
+  width: rem(600);
+  height: rem(450);
   margin: auto auto;
-  border-radius: 5px;
+  border-radius: 8px;
   display: flex;
   flex-direction: row nowrap;
 }
@@ -280,30 +282,71 @@ body {
 .card__content {
   width: 300px;
   height: auto;
+  background-color: var(--white);
+  padding: 32px;
 }
 .card__content__head1 {
-  background-color: red;
+  color: var(--dark-grayish-blue);
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
 }
 .card__content__head2 {
-  background-color: orange;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  margin-bottom: 24px;
 }
 .card__content__paragraph {
-  background-color: yellow;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  margin-bottom: 29px;
 }
 .card__content__price--discount {
-  background-color: green;
+  float: left;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: var(--dark-cyan);
 }
 .card__content__price--raw {
-  background-color: blue;
+  float: left;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 32px;
+  height: 32px;
+  margin-left: 19px;
+  text-decoration: line-through;
+  margin-bottom: 32px;
 }
 .card__content__add__to__cart {
-  background-color: navy;
+  width: 236px;
+  height: 48px;
+  display: flex;
+  background-color: var(--dark-cyan);
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 11.6px;
+  cursor: pointer;
 }
 .card__content__add__to__cart__icon {
-  background-color: aliceblue;
+  width: 14.39px;
+  height: 16px;
 }
 .card__content__add__to__cart__text {
-  background-color: aquamarine;
+  color: var(--white);
+}
+.card__content__add__to__cart:hover {
+  background-color: #1A4032;
+}
+
+.float__wrapper {
+  display: flow-root;
 }
 
 /*# sourceMappingURL=style.css.map */
