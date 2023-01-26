@@ -20,8 +20,8 @@ body {
   display: flex;
   flex-direction: column nowrap;
   @include mobile {
-    width: 343px;
-    height: 611px;
+    width: rem(343px);
+    height: rem(611px);
     display: block;
   }
   &__image {
@@ -29,8 +29,8 @@ body {
       width: rem(300px);
       height: auto;
       @include mobile {
-        width: 343px;
-        height: 240px;
+        width: rem(343px);
+        height: rem(240px);
         object-fit: cover
       }
     }
@@ -44,8 +44,8 @@ body {
       padding: rem(20px); 
     }
     @include mobile {
-      width: 343px;
-      height: 371px;
+      width: rem(343px);
+      height: rem(371px);
     }
     &__head1 {
       color: var(--dark-grayish-blue);
