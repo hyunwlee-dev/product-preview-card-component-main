@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Product preview card component](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa/hub)
+- Solution URL: [Product preview card component](https://www.frontendmentor.io/solutions/product-preview-card-component-PIJEaI9a4E)
 - Live Site URL: [Product preview card component](https://product-preview-card-hyunwlee.netlify.app/)
 
 ## My process
