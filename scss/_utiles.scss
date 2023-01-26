@@ -1,11 +1,12 @@
 @use "sass:math";
 $rootUnit: 14px !default;
+$break: 768px;
 
 @function removeUnit($value) {
   @return math.div($value, $value * 0 + 1);
 }
 
-@function rem1($value, $base: $rootUnit) {
+@function rem($value, $base: $rootUnit) {
   @return (removeUnit(math.div($value, $base))) * 1rem;
 }
 
@@ -21,13 +22,12 @@ $rootUnit: 14px !default;
   align-items: $items;
 }
 
-$break: 768px;
-
 @mixin mobile {
   @media (max-width: #{$break - 1}) {
     @content;
   }
 }
+
 @mixin desktop {
   @media (min-width: #{$break}) {
     @content;
